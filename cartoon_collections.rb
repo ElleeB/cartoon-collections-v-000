@@ -1,9 +1,21 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+dwarf_names = ["Doc", "Dopey", "Bashful", "Grumpy"]
+
+def roll_call_dwarves(dwarf_names)
+  dwarf_names.each_with_index do |name, index|
+    position = index + 1
+    puts "#{position} #{name}"
+  end
 end
 
-def summon_captain_planet# code an argument here
-  # Your code here
+planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
+
+def summon_captain_planet(planeteer_calls)
+  new_array = []
+  planeteer_calls.map! { |i| i == "heart" ? "heart!" : i }
+  planeteer_calls.collect do |call|
+    new_array << call.capitalize
+  end
+   new_array
 end
 
 def long_planeteer_calls# code an argument here
