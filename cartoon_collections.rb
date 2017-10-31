@@ -10,6 +10,18 @@ end
 planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
 
 def summon_captain_planet(planeteer_calls)
+
+
+
+
+
+
+
+
+
+
+
+def summon_captain_planet(planeteer_calls)
   new_array = []
   planeteer_calls.collect! { |i| i == "heart" ? "heart!" : i }
   planeteer_calls.collect! do |phrase|
