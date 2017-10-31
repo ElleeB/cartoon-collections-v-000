@@ -12,10 +12,11 @@ planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
 def summon_captain_planet(planeteer_calls)
   new_array = []
   planeteer_calls.map! { |i| i == "heart" ? "heart!" : i }
-  planeteer_calls.collect do |call|
-    new_array << call.capitalize
+  planeteer_calls.map do |phrase|
+    new_array << phrase.capitalize
   end
-   new_array
+  new_string = new_array.join("! ")
+  final_array = new_string.split
 end
 
 def long_planeteer_calls# code an argument here
