@@ -32,7 +32,7 @@ def find_the_cheese(snacks)
      if snacks.include?(type)
        return type
      else
-       return "nil"
+       return nil
      end
   end
 end
