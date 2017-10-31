@@ -16,7 +16,7 @@ def summon_captain_planet(planeteer_calls)
     new_array << phrase.capitalize
   end
   new_string = new_array.join("! ")
-  final_array = new_string.split
+  puts final_array = new_string.split
 end
 
 def long_planeteer_calls# code an argument here
